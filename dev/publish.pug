@@ -1,0 +1,13 @@
+.pusblish.formx
+    .formx__header
+        .formx__title Добавить публикацию
+        .formx__action
+            a(href="posts.html")
+                img(src="/admin/assets/img/expand.svg")
+    .formx__main
+        form(class="formx_form-publish")
+            input(id="name" type="text" class="input formx__input" placeholder="Название")
+            textarea(id="content" type="text" class="input formx__textarea" placeholder="Контент")
+            .formx__buttons 
+                button(type="button" class="button formx__button") Загрузить фото
+                button(type="button" class="button formx__button") Опубликовать

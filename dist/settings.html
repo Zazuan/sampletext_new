@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" data-page="settings">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <title>SampleText - Settings</title>
+    <link rel="stylesheet" href="/admin/assets/styles/settings.css">
+    <script src="/admin/assets/javascript/app.js" async type="module"></script>
+  </head>
+</html>
+<body>
+  <header class="header">
+    <h1 class="header__title">SampleText</h1>
+    <div class="menu"><a class="menu__link" href="#">Справка</a><a class="menu__link" href="#">Username</a><a class="menu__link" href="#"><img src="/admin/assets/img/logout.svg" alt="logout"></a></div>
+  </header>
+  <div class="flex-row">
+    <aside class="sidebar">
+      <nav class="nav"><a class="nav__item" href="dashboard.html" id="page-dashboard"><img class="nav__icon" src="admin/assets/img/dashboard.svg" alt=""><span class="nav__text">Дашборд</span></a><a class="nav__item" href="settings.html" id="page-settings"><img class="nav__icon" src="admin/assets/img/settings.svg" alt=""><span class="nav__text">Настройки</span></a><a class="nav__item" href="pages.html" id="page-pages"><img class="nav__icon" src="admin/assets/img/pages.svg" alt=""><span class="nav__text">Страницы</span></a><a class="nav__item" href="cat.html" id="page-cat"><img class="nav__icon" src="admin/assets/img/category.svg" alt=""><span class="nav__text">Разделы</span></a><a class="nav__item" href="posts.html" id="page-posts"><img class="nav__icon" src="admin/assets/img/posts.svg" alt=""><span class="nav__text">Публикации</span></a><a class="nav__item" href="menus.html" id="page-menus"><img class="nav__icon" src="admin/assets/img/menu.svg" alt=""><span class="nav__text">Меню</span></a><a class="nav__item" href="themes.html" id="page-themes"><img class="nav__icon" src="admin/assets/img/theme.svg" alt=""><span class="nav__text">Темы</span></a><a class="nav__item" href="/" id="page-back"><img class="nav__icon" src="admin/assets/img/back.svg" alt=""></a></nav>
+    </aside>
+    <div class="main">
+      <div class="container">
+        <form class="settings">
+          <h1 class="settings__title">Настройки сайта</h1>
+          <div class="settings__item">
+            <label class="text text_type2" for="name">Название сайта</label>
+            <input class="input settings__input" id="name" type="text">
+          </div>
+          <div class="settings__item">
+            <label class="text text_type2" for="desc">Описание</label>
+            <input class="input settings__input" id="desc" type="text">
+          </div>
+          <div class="settings__item">
+            <label class="text text_type2" for="emaul">Почта администратора</label>
+            <input class="input settings__input" id="email" type="email">
+          </div>
+          <div class="settings__item">
+            <label class="text text_type2" for="lang">Язык</label>
+            <input class="input settings__input" id="lang" type="text">
+          </div>
+          <button class="button settings__button" type="button">Сохранить изменения</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,65 @@
+@import url('libs/smart-grid.less');
+@import url('fonts.less');
+@import url('color.less');
+
+.reset();
+
+.container {
+	.wrapper();
+}
+
+* {
+	box-sizing: border-box;
+
+	font-family: Roboto-Light;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+html, body {
+	// overflow: hidden;
+
+	height: 100%;
+	height: -webkit-fill-available;
+
+	-webkit-overflow-scrolling: touch;
+
+	touch-action: pan-x pan-y;
+}
+
+body {
+	background: @theme-color;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.flex-row_sb {
+	justify-content: space-between;
+}
+
+.flex-row_ac {
+	align-items: center;
+}
+
+.flex-row_as {
+	align-items: flex-start;
+}
+
+.box-row {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	gap: 1rem;
+
+	> * {
+		flex: 1 1 calc((100% / 3) - 2rem);
+	}
+}

@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru" data-page="pages")
+ head
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+  meta(http-equiv="cache-control" content="no-cache, no-store, must-revalidate")
+  meta(http-equiv="pragma" content="no-cache")
+  meta(http-equiv="expires" content="0")
+  
+  title SampleText - Pages
+
+  link(rel="stylesheet" href="/admin/assets/styles/pages.css")
+  script(src="/admin/assets/javascript/app.js" async type="module")
+
+ body
+    include header.pug
+    .flex-row
+        include sidebar.pug
+        .main
+            .container
+                .search
+                    include search-bar.pug
+                    a(href="#" class="button") Добавить страницу
+                .box-row
+                    include box.pug
+                    include box.pug
+                    include box.pug
+                    include box.pug
+                    include box.pug
+                    include box.pug

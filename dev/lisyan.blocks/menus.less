@@ -1,0 +1,127 @@
+@import "config.less";
+@import "header/header.less";
+@import "sidebar/sidebar.less";
+@import "main/main.less";
+@import "input/input.less";
+@import "button/button.less";
+@import "text/text.less";
+
+.menus, .m-items {
+	padding: 21px;
+
+	display: flex;
+	align-items: space-between;
+	flex-direction: column;
+
+	background: #2B2B2B;
+	backdrop-filter: blur(4px);
+	border-radius: 20px;
+
+	&__name, &__url {
+		font-size: 14px;
+		line-height: 16px;
+
+		color: #F5F5F5;
+	}
+}
+
+.menus {
+	width: 20%;
+	min-width: 274px;
+
+	&__item {
+		padding: 13px;
+		margin-bottom: 16px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		background: transparent;
+		border-radius: 10px;
+
+		cursor: pointer;
+
+		transition: background .25s;
+
+		&:hover {
+			background: #333334;
+
+			.menus__controls {
+				display: flex;
+			}
+		}
+	}
+
+	&__item_active {
+		background: #333334;
+
+		.menus__controls {
+			display: flex;
+		}
+	}
+
+	&__controls {
+		display: none;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		> * { 
+			display: block;
+			margin-right: 20px;
+			cursor: pointer;
+			&:last-child { 
+				margin-right: 0;  
+			}
+		}
+	}
+
+	&__button {
+		display: block;
+		padding: 10px 0;
+	}
+}
+
+.m-items {
+	width: 65%;
+	height: auto;
+
+	max-width: 719px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		background: #333334;
+		border-radius: 10px;
+
+		padding: 13px;
+
+		margin-bottom: 16px;
+	}
+
+	&__subrow {
+		display: inherit;
+		justify-content: inherit;
+		align-items: inherit;
+	}
+
+	&__edit {
+		margin-right: 22px;
+	}
+
+	&__controls {
+		> * {
+			margin-right: 30px;
+			cursor: pointer;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__button {
+		padding: 10px 0;
+	}
+}
